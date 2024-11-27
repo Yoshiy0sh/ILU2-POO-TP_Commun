@@ -1,6 +1,7 @@
 package model;
 
 import static org.junit.jupiter.api.Assertions.*;
+import reservation.*;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
@@ -21,9 +22,12 @@ class ReservationRestaurantTest {
 
 	@Test
 	void testToString() {
-		assertEquals(MESSAGE_RESA_1, reservation.toString(), "la sortie console devrait etre : " + MESSAGE_RESA_1);
+		System.out.println(reservation.toString());
+		//assertEquals(MESSAGE_RESA_1, reservation.toString(), "la sortie console devrait etre : " + MESSAGE_RESA_1);
+		assertEquals(MESSAGE_RESA_1, reservation.toString());
 		Reservation reservation2 = new ReservationRestaurant(14, 12, 2, 3);
-		assertEquals(MESSAGE_RESA_2, reservation2.toString(), "la sortie console devrait etre : " + MESSAGE_RESA_2);
+		//assertEquals(MESSAGE_RESA_2, reservation2.toString(), "la sortie console devrait etre : " + MESSAGE_RESA_2);
+		assertEquals(MESSAGE_RESA_2, reservation2.toString());
 	}
 
 	@Test
